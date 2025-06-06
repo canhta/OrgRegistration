@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeacherZone - Organization Registration Prototype</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            700: '#0f766e'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation Header -->
+    <nav class="bg-white shadow-sm border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-xl font-bold text-brand-700">TeacherZone</h1>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="registration-wizard.html" class="bg-brand-600 hover:bg-brand-700 text-white px-4 py-2 rounded-md text-sm font-medium">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">TeacherZone Prototype</h2>
+            <p class="text-lg text-gray-600">Organization Registration & Management System</p>
+        </div>
+
+        <!-- Flow Navigation Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <!-- Self-Service Registration -->
+            <div class="bg-white overflow-hidden shadow rounded-lg">
+                <div class="px-4 py-5 sm:p-6">
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Self-Service Registration</h3>
+                    <p class="text-sm text-gray-500 mb-4">Multi-step wizard for organization admins to register their business</p>
+                    <a href="registration-wizard.html" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-brand-600 hover:bg-brand-700">
+                        Start Registration
+                    </a>
+                </div>
+            </div>
+
+            <!-- Super Admin Console -->
+            <div class="bg-white overflow-hidden shadow rounded-lg">
+                <div class="px-4 py-5 sm:p-6">
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Super Admin Console</h3>
+                    <p class="text-sm text-gray-500 mb-4">Create and manage organizations directly</p>
+                    <a href="super-admin-create-org.html" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-brand-600 hover:bg-brand-700">
+                        Admin Console
+                    </a>
+                </div>
+            </div>
+
+            <!-- CRM Lead Management -->
+            <div class="bg-white overflow-hidden shadow rounded-lg">
+                <div class="px-4 py-5 sm:p-6">
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Lead Management</h3>
+                    <p class="text-sm text-gray-500 mb-4">CRM interface for managing leads and conversions</p>
+                    <a href="lead-management.html" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-brand-600 hover:bg-brand-700">
+                        View Leads
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Pages -->
+        <div class="bg-white shadow rounded-lg">
+            <div class="px-4 py-5 sm:p-6">
+                <h3 class="text-lg font-medium text-gray-900 mb-4">Additional Pages</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <a href="org-detail.html" class="text-brand-600 hover:text-brand-800 text-sm font-medium">Organization Details</a>
+                    <a href="lead-detail.html" class="text-brand-600 hover:text-brand-800 text-sm font-medium">Lead Detail & Timeline</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+</body>
+</html>
